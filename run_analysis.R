@@ -52,7 +52,7 @@ names(data_set)[563] <- 'y_values'
 
 
 # Get all columns with mean or std variables data. 
-# mean_std_cols -> gets all cols with mean or std data.
+# mean_std_cols -> gets all cols with mean() or std() data.
 patterns= c("-mean\\(\\)","-std\\(\\)")
 mean_std_cols <- unique (grep(paste(patterns,collapse="|"), features$V2, value=TRUE))
 
